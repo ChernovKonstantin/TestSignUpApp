@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Потрібен доступ до фотогалереї для вибору фото</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Потрібен доступ до камери для захвату фото</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NunitoSans.ttf</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>PrimaryYellow</string>
+		<key>UIImageName</key>
+		<string>SplashIcon</string>
+	</dict>
+</dict>
+</plist>
