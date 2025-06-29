@@ -1,75 +1,81 @@
 # 📝 TestTask – User Sign-Up App
 
-SwiftUI-застосунок, який демонструє роботу з формою реєстрації користувача, валідацією полів, відправкою POST-запитів через `multipart/form-data` та обробкою відповіді.
+A SwiftUI application demonstrating user registration form handling, field validation, sending POST requests via `multipart/form-data`, and response processing.
 
 ---
 
-## 🔧 1. Конфігурація та кастомізація
+## 🔧 1. Configuration and Customization
 
 ### 📍 API Endpoint
 
-API базовий URL знаходиться в `APIServiceImpl`. Щоб змінити його:
+The base API URL is located in `APIServiceImpl`. To change it:
 
 ```swift
 let baseURL = URL(string: "https://frontend-test-assignment-api.abz.agency/api/v1/")
 ```
 
-### 📍 Валідація
+### 📍 Validation
 
-Правила валідації розташовані в `ValidationService.swift`. Можеш змінити або додати свої:
-- Мінімальна довжина імені
-- Формат email згідно RFC2822
-- Перевірка номера телефону на відповідність формату `+380XXXXXXXXX`
-- Перевірка фото (не більше 5 МБ, формат JPEG)
+Validation rules are defined in `ValidationService.swift`. You can modify or add your own:
 
-### 📍 Стилі
+* Minimum name length
+* Email format according to RFC2822
+* Phone number validation to match `+380XXXXXXXXX` format
+* Photo check (max 5MB, JPEG format)
 
-Кольори та шрифти налаштовуються через:
-- `Assets.xcassets`
-- `Info.plist`
+### 📍 Styles
 
----
+Colors and fonts can be customized via:
 
-## 📦 2. Залежності
-
-Цей проєкт не використовує сторонніх пакетів (CocoaPods чи Swift Package Manager). Весь функціонал реалізовано нативно через SwiftUI та Combine.
+* `Assets.xcassets`
+* `Info.plist`
 
 ---
 
-## 🛠 3. Поширені проблеми та вирішення
+## 📦 2. Dependencies
 
-Не виявлено в ході тестування.
+This project does not use third-party packages (CocoaPods or Swift Package Manager). All functionality is implemented natively using SwiftUI and Combine.
 
 ---
 
-## 🧱 4. Інструкції для збірки
+## 💠 3. Common Issues and Solutions
 
-### Вимоги
-- macOS 13+
-- Xcode 15+
-- Swift 5.9+
+No issues were discovered during testing.
 
-### Кроки
+---
 
-1. Клонувати репозиторій:
+## 🧱 4. Build Instructions
+
+### Requirements
+
+* macOS 13+
+* Xcode 15+
+* Swift 5.9+
+
+### Steps
+
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/ChernovKonstantin/TestSignUpApp.git
    ```
 
-2. Відкрити проєкт:
+2. Open the project:
+
    ```bash
    open TestTask-SignUpApp.xcodeproj
    ```
 
-3. Зібрати (Cmd + B) або запустити (Cmd + R) у симуляторі чи на фізичному пристрої.
+3. Build (Cmd + B) or run (Cmd + R) in the simulator or on a physical device.
 
 ### API Token
-Token запитується автоматично через `/api/v1/token` перед кожним POST-запитом, вручну налаштовувати нічого не потрібно.
+
+The token is requested automatically via `/api/v1/token` before each POST request, no manual setup needed.
 
 ---
 
-## 📬 Зв’язок
+## 📬 Contact
 
-Для зворотного зв’язку, знайдених багів або пропозицій — відкрий issue або створи pull request у репозиторії.
+For feedback, bugs, or suggestions — open an issue or create a pull request in the repository.
 
 ---
